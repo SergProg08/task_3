@@ -1,0 +1,16 @@
+ version: "3.9"
+
+ services:
+   app:
+     build:
+       dockerfile: ./Dockerfile
+     command:
+       - gunicorn
+       - task_3.wsgi:application
+       - --bind
+       - "0.0.0.0:8000"
+     ports:
+       - "8000:8000"
+     restart: always
+     volumes:
+       - ./task_3/database:/app/database
