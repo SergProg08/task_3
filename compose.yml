@@ -1,16 +1,11 @@
- version: "3.9"
+version: '3.9'
 
- services:
-   app:
-     build:
-       dockerfile: ./Dockerfile
-     command:
-       - gunicorn
-       - wsgi:application
-       - --bind
-       - "0.0.0.0:8000"
-     ports:
-       - "8000:8000"
-     restart: always
-     volumes:
-       - ./database:/app/database
+services:
+  # Сервис для Django-приложения
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    command: gunicorn --bind 0.0.0.0:8000 task_3.wsgi:application
