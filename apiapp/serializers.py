@@ -71,7 +71,7 @@ class MyTokenRefreshSerializer(TokenRefreshSerializer):
                     data_to_display = {"refresh": str(user.refresh_token.value), "access": str(refresh.access_token)}
                     return data_to_display
             else:
-                return Response({"Error": f"Invalid refresh token."})
+                return Response({"Error": "Invalid refresh token."})
 
 
 class UserUpdateSerializer(serializers.ModelSerializer):

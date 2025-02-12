@@ -24,7 +24,7 @@ Creates and saves a User with the given email,and password.
                 user.save(using=self._db)
                 return user
         except Exception:
-            raise
+            raise 
 
     def create_user(self, email, password=None, **extra_fields):
         extra_fields.setdefault('is_staff', False)

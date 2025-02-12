@@ -153,7 +153,7 @@ AUTHENTICATION_BACKENDS = [
 CONSTANCE_BACKEND = 'constance.backends.memory.MemoryBackend'
 CONSTANCE_CONFIG = {
     'TIME_VALID_REFRESH_TOKEN_DAYS': (30, "lifetime of refresh token"),
-    'TIME_VALID_ACCESS_TOKEN_SECONDS': (3000, "lifetime of access token"),
+    'TIME_VALID_ACCESS_TOKEN_SECONDS': (30, "lifetime of access token"),
 }
 CONSTANCE_IGNORE_ADMIN_VERSION_CHECK = True
 
