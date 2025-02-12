@@ -72,29 +72,29 @@ Clients may request an Access Token refresh at any time, for instance, upon Acce
     Response: {"id": 1, "username": "John Smith", "email": "user@example.com"}
     curl -X PUT http://localhost:8000/api/me/ -d '{"email": "newuser@example.com"}' -H "Content-Type: application/json" -H "Authorization: Bearer   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjMsInVzZXJuYW1lIjoiZXhhbXBsZVVzZXIiLCJleHAiOjE3MTIxNDYxNDd9.zKobBlRuOiJSxCmi-iYap1bejfnvK6M3qtnkT0ssDKA"
 
-### Currently http://158.160.151.243:8000 NOT avaliable. Here is only an example of final links:
+### Currently http://192.168.0.12:8000/ NOT avaliable. Here is only an example of final links:
 
 #### User Registration:
 
-    http://158.160.151.243:8000/api/register/
+    http://192.168.0.12:8000/api/register/
 
 #### Authentication (Obtaining Access and Refresh Token) + LOGIN :
 
-    http://158.160.151.243:8000/api/login/
+    http://192.168.0.12:8000/api/login/
 
 #### Access Token Refresh:
 
-    http://158.160.151.243:8000/api/refresh/
+    http://192.168.0.12:8000/api/refresh/
 
 #### Logout :
 
-    http://158.160.151.243:8000/api/logout/
+    http://192.168.0.12:8000/api/logout/
 
 #### Me:
 
-    http://158.160.151.243:8000/api/me/
+    http://192.168.0.12:8000/api/me/
 
 #### admin:
 
-    username: admin@admin.admin
-    password: admin
+    username: root@mail.ru
+    password: root
